@@ -49,7 +49,8 @@ clip-path: polygon(42% 0, 100% 0, 100% 100%, 16% 100%);
 section
 {
 	position: relative;
-	padding: 100px 50px 100px 150px;
+	padding: 0px 10px;
+	height: calc(100vh + 50px);
 	box-sizing: border-box;
 }
 .container
@@ -130,7 +131,7 @@ section .content h2
 	animation:left-in 0.5s ease-in forwards;
 	animation-delay: 1s;
 	opacity:0;
-	width: 500px;
+	/*width: 500px;*/
 }
 section .content p 
 {
@@ -145,11 +146,11 @@ section .content p
 	font-family: "bebas"; 
 }
 .black{
-
+	    text-shadow: 1px 1px 1px white;
 	color: #ff2562;
 }
 .pink {
-		
+		    text-shadow: 1px 1px 1px white;
 		color: #222;
 }
 section .content a
@@ -181,7 +182,7 @@ section .img
 }
 section .img img 
 {
-
+	margin-top: 180px;
 	width: auto;
 	max-width:600px; 
 	animation:left-in 0.5s ease-in forwards;
@@ -465,10 +466,9 @@ section .img img
  }
   section .content h2
  {
- 	text-align: center;
- 	padding-top: 20%;
- 	width:200px;
-
+ 	display: block;
+    text-align: center;
+    margin: auto;
  }
    section .content p
  {
@@ -497,7 +497,7 @@ section .img img
  }
  section .sci 
  {
- 	left: 50px;
+ 	left: 10px;
  	bottom: 30px;
  }
 
@@ -528,6 +528,12 @@ section .img img
 }
 
 @media (max-width:655px){
+		
+
+	.black{color:#222;}
+	.pink{color: #ff2562}
+
+
 		 section 
  {
  	flex-direction: column-reverse;
@@ -557,9 +563,9 @@ section .img img
   section .content h2
  {
 
- 	width: 200px;
- 	font-size: 35px;
- 	text-align: left;
+ 	display: block;
+    text-align: center;
+    margin: auto;
 	}
    section .content p
  {
@@ -583,7 +589,7 @@ section .img img
  }
  section .img img 
  {
- 	max-width: 250px;
+ 	max-width: 95vw;
  	padding-right: 20px;
  }
 }
