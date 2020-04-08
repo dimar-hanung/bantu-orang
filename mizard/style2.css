@@ -1,997 +1,294 @@
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
 
-   @font-face {
-	font-family: "bebas";
-	src: url('mama.ttf');
+@font-face {
+    font-family: "bebas";
+    src: url('mama.ttf');
 }
-	  @font-face {
-	font-family: "benue";
-	src: url('bebas.ttf');
-}
-*
-{
-	margin:0 ;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
-
-}
-html, body {
-	height: 100%;
-}
-main{
-	height: 90%;
-}
-dl,dd,p {
-	margin:0;
-	padding:0;
-}
-section
-{
-	position: relative;
-	widows: 100%;
-	height: 90%;
-	background:#222;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-}
-
-section#Home:before
-{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background:#F6A6B9;
-	animation:fade-in 0.5s ease-in forwards;
-	animation-delay: 1s;
-	opacity:0;
-	
-	clip-path: polygon(40% 0, 100% 0, 100% 100%, 13% 100%);
-
-
-
-
-}
-section.about {
-	position: relative;
-	widows: 100%;
-	height: 90%;
-	background:black;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-}
-section#Member{
-
-	background:#F6A6B9;
-
-
-}
-section
-{
-	position: relative;
-	padding: 0px 10px;
-	height: calc(100vh);
-	box-sizing: border-box;
-}
-
-	
-
-#about{
-	margin-bottom: 700px;
-	display: inline-flex;
-	margin: auto;
-}
-
-
-
-section .Home{
-
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background:#000000ad;
-
-}
-section .content{
-	width: 900px;
-	height:500px;
-	padding-top: 170px;
-	padding-left: 100px;
-}
-
-section .content h2 
-{
-	color: #ff2562;
-	font-size: 5.5vw;
-	font-weight: 800;
-	animation:left-in 0.5s ease-in forwards;
-	animation-delay: 1s;
-	opacity:0;
-	/*width: 500px;*/
-}
-section .content p 
-{
-	color :#fff;
-	font-size: 1.2vw;
-	animation:left-in 0.5s ease-in forwards;
-	animation-delay: 1s;
-	opacity:0;
-	font-style: "bebas";
-}
-.digital{
-	font-family: "bebas"; 
-}
-.black{
-	    	color: #F6A6B9;
-	    	text-shadow:1px 1px 1px white;
-}
-.pink {
-		
-		color: #222;
-		text-shadow:1px 1px 1px white;
-}
-section .content a
-{
-	position: relative;
-	display: inline-block;
-	padding: 2vh 2vw;
-	margin-top: 20px;
-	background :#F6A6B9;
-	color: #fff;
-	text-decoration:none;
-	text-transform: uppercase;
-	font-size: 0.95vw;
-	font: weight 700vh;;
-	letter-spacing: 2px; 
-	animation:left-in 0.5s ease-in forwards;
-	animation-delay: 1.2s;
-	opacity:0;
-	text-align: center;
-}
-section .content a:hover
-{
-	background :#fff;
-	color: #F6A6B9;
-	}
-section .img 
-{
-	position: relative;
-	padding-right: 30px;
-}
-section .img img 
-{
-	margin-top: 100px;
-	width: auto;
-	max-width:40vw; 
-	animation:left-in 0.5s ease-in forwards;
-	animation-delay: 1.5s;
-	opacity:0;
-}
-.img-about{
-	position: relative;
-	left:100px;
-	top:50px;
-}
-#bout img{
-	max-width: 370px;
-	margin-top:1px;
-	left: 50px;
-}
-
-#bout .tentang{
-	width: 100%;
-	height:auto;
-	margin-right: 50px;
-	padding-left: 200px;
-
-
-}
-#bout .tentang h2{
-	 
-	color: #F6A6B9;
-	font-size: 4vw;
-	text-align: center;
-}
-#bout .tentang p{
-	color:#fff;
-	font-size: 1.2vw;
-	text-align:justify;
-
-}
-#Member .member dl {
-	width: 47%;
-	float: left;
-	overflow: hidden;
-} 
-
-#Member .member {
-	overflow: hidden;
-	clear: both;
-	margin-top: 150px;
-	
-	}
-	
-	#Member .member dl {
-
-	overflow: hidden;
-	width: 47%;
-	float: left;
-	margin-bottom: 20px;
-	}
-	
-	#Member .member dl:nth-child(odd) {
-	margin-right: 5%;
-	}
-	
-	#Member .member dt {
-	float: left;
-	margin-left: 90px;
-	bottom: 25px;
-	padding-bottom: 25px;
-	width:27%;
-	}
-	#Member .member dd {
-	float: right;
-	width: 55%;
-	padding-top: 10px;
-	}
-	#Member .member dd .name {
-	font-size: 30px;
-	
-	
-	}
-	#Member .member dd .name .font-accent {
-	font-size: 50px;
-	font-weight: 200;
-	margin-right: 16px;
-	line-height: 1;
-	display: block;
-	padding-bottom: 5px;
-	}
-	#Member .member .profile {
-	margin-bottom: 32px;
-	padding-top: 15px;
-	}
-	#Member .member .profile a {
-		color:black ;
-	}
-.person {
-	float: left;
-}
-.isi{
-	width: 600px;
-	right: 100px;
-}
 
-img {
-	float: left;
-	margin: 10px;
-	left: 70px;
+@font-face {
+    font-family: "benue";
+    src: url('bebas.ttf');
 }
-.clear {
-	clear: left;
-}
-
-.nav 
-{
-	position: absolute;
-	top: 75px;
-	left: 100px;
-	display: flex;
-	border-left: 5px solid #F6A6B9;
-	padding-left: 20px;
-	
-}
-#Member .nav {
-	border-left: 5px solid #222;
-}
-.judul{
-	font-family: "benue";
-	font-size: 45px;
-}
-.nav li 
-{
-	list-style: none;
-}
-.nav li a 
-{
-	text-decoration: none;
-	color: #fff;
-	margin-right: 30px;
-	font-size: 0.93em;
-	text-transform: uppercase;
-	font-weight: 700;
-	animation:left-in 0.5s ease-in forwards;
-	animation-delay: 1s;
-	opacity:0;
-}
-
-.nav li a:active 
-{
-	color: #F6A6B9;
-}
-.nav li a:hover 
-{
-	color: #F6A6B9;
-}
-#Member .nav li a:hover 
-{
-	color: #222;
-}
-.nav li icon {
-		position: fixed;
-		top: 40px;
-		right: 40px;
-		width: 30px;
-		height: 30px;
-		flex-direction: column;
-		z-index: 11;
-}
-
-.container
-{
-	background-color: white;
-	/*padding:100px;*/
-	margin: 0;
-
-
-}
-.About
-{
-	   padding: 50px;
-        margin: 0px;
-        background-color: white;
-        text-align: center;
-}
-
-.footer
-	{
-		margin: 0;
-		list-style-type: none;
-		width: 40px;
-		float: right;
-		position: relative;
 
-	}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 
-.btn{
- 
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  float: right;
-  text-align:center;
-  margin: 10px;
-  border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
-  color: #222;
-  overflow: hidden;
-  position: relative;
-
-
-}
-.btn i{
-  line-height: 50px;
-  font-size: 26px;
-  transition: 0.2s linear;
-}
-.btn:hover i{
-  transform: scale(1.3);
-  color: #F6A6B9;
-}
-.btn::before{
-  content: "";
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background: #222;
-  transform: rotate(45deg);
-  left: -110%;
-  top: 90%;
-}
-.btn:hover::before{
-  animation: aaa 0.7s 1;
-  top: -10%;
-  left: -10%;
-}
-@keyframes aaa {
-  0%{
-    left: -110%;
-    top: 90%;
-  }50%{
-    left: 10%;
-    top: -30%;
-  }100%{
-    top: -10%;
-    left: -10%;
-  }
-}
-@media (max-width:1468px){
-	#Member .img {
-		margin:0px auto;
-		position: relative;
-		right: 200px;
-		margin-top: 100px;
-	}
-	#Member .img img{
-		max-width: 200px;
-		padding: 5px;
-		margin:1opx;
-		cursor: pointer;
-	}
 }
 
-@media (max-width:1284px) and (min-width:991px){
-	 section #Home
- {
- 	flex-direction: column-reverse;
- 	justify-content: center;
- 	position: relative;
-	widows: 100%;
-	height: 100%;
-	background:#222;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-
- }
- 	 section #bout
- {
- 	flex-direction: column-reverse;
- 	justify-content: center;
- 	position: relative;
-	widows: 100%;
-	height: 100%;
-	background:#222;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-
- }
- .black{
- 	color: #F6A6B9;
- }
-  section:before 
- {
- clip-path: polygon(63% 0, 100% 0, 100% 100%, 33% 100%);
-
- }
- section .content{
-
-	padding-left: 100px;
+html,
+body {
+    height: 100%;
 }
- section .content a {
- 	background-color: #F6A6B9;
- }
 
-  .footer{
-  position: absolute;
-  top: 92%;
-  transform: translateY(-50%);
-  width: 95%;
 
-}
-.btn{
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: #f1f1f1;
-  margin: 10px;
-  border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
-  color: #222;
-  overflow: hidden;
-  position: relative;
-}
-.btn i{
-  line-height: 40px;
-  font-size: 20px;
-  transition: 0.2s linear;
-}
-#Home .img img{
-	max-width: 375px;
+.navbar-ctn {
+    position: relative;
+    /*top: 20px;*/
+    padding-top: 40px;
+    /*margin-top: 10px;*/
 }
-#bout .img-about img{
-	max-width:350px;
-	
-}
-.img-about{
-	max-width: 100px;
-}
-#bout .tentang {
-	margin-top: 50px;
-	padding-left: 450px;
-	padding-right:10px;
-}
-#Member .img {
-	margin:0px auto;
-	position: relative;
 
-	margin-top: 100px;
-	right: 170px;
-}
-#Member .img img{
-	max-width: 170px;
-	padding: 5px;
-	margin:10px;
-	cursor: pointer;
+section {
+    display: block;
+    position: relative;
+    background: #222;
+    min-height: 100vh;
+    padding: 0px 10px 100px 10px;
+    height: max-content;
+    box-sizing: border-box;
 }
-#Member .member dl {
-	width: 47%;
-	float: left;
-	overflow: hidden;
-} 
 
-#Member .member {
-	overflow: hidden;
-	clear: both;
-	margin-top: 150px;
-	
-	}
-	
-	#Member .member dl {
 
-	overflow: hidden;
-	width: 47%;
-	float: left;
-	margin-bottom: 20px;
-	}
-	
-	#Member .member dl:nth-child(odd) {
-	margin-right: 5%;
-	}
-	
-	#Member .member dt {
-	float: left;
-	margin-left: 90px;
-	bottom: 25px;
-	padding-bottom: 25px;
-	width:27%;
-	}
-	#Member .member dd {
-	float: right;
-		width: 55%;
-	padding-top: 10px;
-	}
-	#Member .member dd .name {
-	font-size: 30px;	
-	}
-	#Member .member dd .name .font-accent {
-	font-size: 40px;
-	font-weight: 200;
-	margin-right: 16px;
-	line-height: 1;
-	display: block;
-	padding-bottom: 5px;
-	}
-	#Member .member .profile {
-	margin-bottom: 32px;
-	padding-top: 15px;
-	}
-	#Member .member .profile a {
-		color:black ;
-	}
 
-}
-
-@media (max-width:991px){
 
-.black{
-	color: #222;
-}
-.menuicon {
-		position: fixed;
-		top:40px;
-		right: 40px;
-		width: 30px;
-		height: 30px;
-		background: url(menu.png);
-		filter: invert(1);
-		background-repeat: no-repeat;
-		cursor: pointer;
-		z-index: 1000;
-	}
+/* ======================= navbar atas =================================*/
 
 
-
-#bout .img-about{
-	position: relative;
-	margin-right: 340px;
-	margin-top: 20px;
-	
-}
-#bout .img-about img{
-	max-width: 45vw;
-	margin-left: 150px;
-	
-}
-#bout .tentang{
-	padding-top: 40px;
-	margin-right: 200px;
-	padding-left:200px;
-	margin-bottom: 20vh;
-	
+.nav {
+    position: relative;
+    /*top: 75px;*/
+    left: 100px;
+    display: flex;
+    width: max-content;
+    border-left: 5px solid #F6A6B9;
+    padding-left: 20px;
 
-}
-#bout .tentang h2{
-	font-size: 3vw;
-}
-#bout .tentang p{
-	font-size: 1.7vw;
-}
-#Member .img {
-	margin:0px auto;
-	position: relative;
-	right: 200px;
 }
-#Member .img img{
-	max-width: 130px;
-	padding: 5px;
-	margin:10px;
-	cursor: pointer;
-}
-	.menuicon .toggle{
-		display: flex;
-	}
-
-	ul.nav{
-		position:relative;
-		top: 0;
-		left: -100;
-		width:100;
-		height: 100%;
-		background: rgba(0,0,0,.95);
-		flex-direction: column;
-		z-index: 11;
-		border:none;
-		padding: 50px;
-		display: none;
-		
-		}
-		ul.nav li {
-			padding: 5px;
-			margin: 5px 0;
-			font-size:25px;
-		}
-
-	.active{
-		background: url(../img/close.png);
-		background-size: 30px;
-		cursor: pointer;
-		background-repeat: no-repeat;
-		z-index: 1000;
-		display: flex !important;
-		position: fixed !important;
-		background: rgba(0,0,0,.95);
-		width: 100%;
-		left: 0;
-		height: -webkit-fill-available;
-		transform: scale(1);
-		animation: animx 0.5s ease-in-out;
-
-		}
-
-	@keyframes animx {
 
-	0%{
-		transform: scale(0);
-	}
-	100%{
-		transform: scale(1);
-	}
-	}
 
- section#Home
- {
- 	flex-direction: column-reverse;
- 	justify-content: center;
- 	position: relative;
-	widows: 100%;
-	height: 100%;
-	background:#222;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-
- }
-  section#bout 
- {
- 
- 	
- 	position: relative;
-	widows: 100%;
-	flex-direction: column;
-	background:#222;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-
- }
- section:before 
- {
- 	clip-path: polygon(63% 0, 100% 0, 100% 100%, 47% 100%);
-
-
- }
- section .content
- {
-	 padding-top: 0px;
-	width: 100%; 
-
- }
-  section .content h2
- {
- 	display: block;
-    text-align: center;
-	font-size: 4vw;
-	
- }
-   section .content p
- {
- 	text-align: center;
-	 font-size: 1.7vw;
-	 padding-left: 100px;
-	padding-right: 100px;
-	
- }
-  section .content a
- {
- 	text-align: center;
- 	font-size: 1.5vw;
- 	position:495px;
-	 background-color: #222;
-	margin-left: 35vw;
- }
-
- 
- section .img img 
- {
-	 max-width: 45vw;
-	 padding-left: 100px;
- }
-.footer{
-  position: absolute;
-  top: 95%;
-  transform: translateY(-50%);
-  width: 100%;
-
+.nav li {
+    list-style: none;
 }
-.btn{
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background: #f1f1f1;
-  margin: 10px;
-  border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
-  color: #222;
-  overflow: hidden;
-  position: relative;
-}
-.btn i{
-  line-height: 30px;
-  font-size: 10px;
-  transition: 0.2s linear;
-}
-.btn:hover i{
-  transform: scale(1.3);
-  color: #F6A6B9;
-}
-.btn::before{
-  content: "";
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background: #222;
-  transform: rotate(45deg);
-  left: -110%;
-  top: 90%;
-}
-.btn:hover::before{
-  animation: aaa 0.7s 1;
-  top: -10%;
-  left: -10%;
-}
-@keyframes aaa {
-  0%{
-    left: -110%;
-    top: 90%;
-  }50%{
-    left: 10%;
-    top: -30%;
-  }100%{
-    top: -10%;
-    left: -10%;
-  }
-}
 
-}
-
-@keyframes fade-in 
-{
-	0% 
-	{
-		opacity: 0;
-	}
-	100%
-	{
-		opacity: 1;
-	}
-}
-@keyframes left-in 
-{
-	0% 
-	{
-		transform: translateX(-200px);
-		opacity: 0;
-	}
-	100%
-	{
-		opacity: 1;
-	}
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+    font-size: 0.93em;
+    text-transform: uppercase;
+    font-weight: 700;
+    animation: left-in 0.5s ease-in;
+    /*animation-delay: 0.5s;*/
+    opacity: 1;
 }
 
-@media (max-width:655px)and (max-height:736px){
-		
-
-	.black{color:#222;}
-	.pink{color: #222;}
-
-
-		 section#Home
- {
- 	flex-direction: column-reverse;
- 	justify-content: center;
- 	position: relative;
-	widows: 100%;
-	height: 100%;
-	background:#222;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-
- }
-  section:before 
- {
-clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 100%);
-
-
- }
-  	 section #bout
- {
- 	flex-direction: column-reverse;
- 	justify-content: center;
- 	position: relative;
-	widows: 100%;
-	height: 100%;
-	background:#222;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-
- }
- #bout .img-about {
-	padding-top: 40px;
-	margin-left: 40px;
- } 
-
- #bout .tentang{
-
-	height:auto;
-	margin-right: 70px;
-	padding-left: 100px;
-
-
+.nav li a:active {
+    color: #F6A6B9;
 }
-#bout .tentang h2 {
-	display: block;
-    text-align: center;
-    margin: auto;
-    padding-top: 10%;
-    font-size: 2em;
-}
-#bout .tentang p{
-text-align: center;
-font-size: 0.50em;
-}
-#Member .img {
-	position: relative;
-	margin-top: 100px;
-	right: 70px;
 
+.nav li a:hover {
+    color: #F6A6B9;
 }
-#Member .img img{
-	max-width: 90px;
-	padding: 2vw;
-	cursor: pointer;
-}
-  section .content
- {
- 	width: 100%;
- 	padding-top:0px;
-	 text-align: center; 
-	 height: 100%;
-
- }
-  section .content h2
- {
-
- 	display: block;
-    text-align: center;
-    margin: auto;
-    padding-top: 10%;
-	font-size: 4vw;
 
+#Member .nav li a:hover {
     color: #222;
-	}
-   section .content p
- {
- 	text-align: center;
-	 font-size: 2vw;
-	 padding-left: 0px;
-	 padding-right: 0px;
- }
-  section .content a
- {
- 	text-align: center;
- 	font-size: 2vw;
- 	background-color:#222;
- 	padding: 10px 15px;
- }
- section .img 
- {
- 	width: 100%;
- 	display: flex;
- 	justify-content: center;
- 	align-items: center;
- 	padding-right: 0;
- 	margin-top: 20px;
- 	position: relative;
- }
- section .img img 
- {
- 	max-width: 65vw;
- 	padding-right: 20px;
- }
- .footer{
-  position: absolute;
-  top: 97%;
-  transform: translateY(-50%);
-  width: 100%;
-
-}
-.btn{
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: #f1f1f1;
-  margin: 10px;
-  border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
-  color: #222;
-  overflow: hidden;
-  position: relative;
-}
-.btn i{
-  line-height: 20px;
-  font-size: 10px;
-  transition: 0.2s linear;
 }
 
+.nav li icon {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+    z-index: 11;
 }
+
+/* !!===================== end navbar atas ==============================*/
+
+
+
+/* ======================= gambar dan teks ============================*/
+
+.kontener {
+    display: flex;
+	max-width: 95vw;
+    margin: 40px 30px;
+    position: relative;
+}
+
+.gambar {
+    display: block;
+    float: none;
+    margin: auto;
+
+	/*responsive gambar, jadi width sebenernya 100%, tapi maksimalnya jadi 370px, jadi ketika ukuran layar kurang dari 370px gambar menyesuaikan*/
+    width: 100%;
+    max-width: 370px;
+
+
+    margin-top: 1px;
+    left: 50px;
+}
+
+.tentang {
+    display: block;
+    max-width: 70vw;
+    margin: auto !important;
+    float: none;
+    padding: 0px !important;
+}
+
+
+#bout .tentang {
+    width: 100%;
+    height: auto;
+    margin-right: 50px;
+    padding-left: 200px;
+
+
+}
+
+#bout .tentang h2 {
+
+    color: #F6A6B9;
+    font-size:28px;
+    text-align: center;
+}
+
+#bout .tentang p {
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+
+}
+
+
+/*!!=============== end gambar dan teks ==========================*/
+
+
+
+
+
+@media (max-width:991px) {
+
+/*================= untuk responsive navbar ======================*/
+
+    .menuicon {
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        background: url(menu.png);
+        border: solid black 1px;
+        border-radius: 5px;
+        filter: invert(1);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+	   ul.nav {
+		
+        display: none;
+
+    }
+
+    ul.nav li {
+        padding: 5px;
+        margin: 5px 0;
+        font-size: 25px;
+    }
+     .active {
+        background: url(../img/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+         background: rgba(0, 0, 0, .95);
+         top: 0px;
+         left: 0px;
+         width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+        z-index: 1000;
+        display: block !important;
+        padding: 50px;
+        position: fixed;
+
+        transform: scale(1);
+        border:none;
+        animation: animx 0.5s ease-in-out;
+
+    }
+
+	   
+    @keyframes animx {
+
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+
+/*!! ================= end untuk responsive navbar ======================*/
+
+
+}
+
+
+/*=================== Animasi Navbar ================================*/
+
+@keyframes left-in {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/*!!=============== end animasi navbar ================================*/
+
+
+@media (max-width:736px) {
+
+/*==================== responsive gambar teks ==================================*/
+
+/*jadi intinya apabila width > 736 kontener nya display:flex jadi gambar sama teks jejeran, kalo display block, gambar sama text atas bawah*/
+
+    .kontener {
+        display: block;
+
+    }
+
+
+    section #bout {
+        /*flex-direction: column-reverse;*/
+        justify-content: center;
+        position: relative;
+        widows: 100%;
+        height: 100%;
+        background: #222;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+	#bout .tentang p {
+        text-align: center;
+        /*font-size: 0.50em;*/
+    }
+
+
+/*====================== end responsive gambar - teks ===========================================*/
+
+
+    
+
+}
+
+
 
